@@ -20,17 +20,7 @@ class IbmResultActivity : AppCompatActivity() {
 
         tvIbmResult.text = result.toString()
 
-        val classification = if(result < 18.5f){
-            "Under weight"
-        } else if (result in 18.5f ..24.9f){
-            "Regular"
-        } else if (result in 24.9f..29.9f){
-            "Overweight"
-        } else if (result in 29.9f..39.9f){
-            "Obesity I"
-        } else {
-            "Obesity II"
-        }
+        val classification = ibmLabel(result)
 
         tvIbmResult.text = getString(R.string.message_classification,classification)
         tvIbmNumber.text = result.toString()
@@ -42,3 +32,18 @@ class IbmResultActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 }
+
+    fun ibmLabel (ibm: Float): String {
+        val result = if(ibm < 18.5f){
+            "Under weight"
+        } else if (ibm in 18.5f ..24.9f){
+            "Regular"
+        } else if (ibm in 25f..29.9f){
+            "Overweight"
+        } else if (ibm in 30f..39.9f){
+            "Obesity I"
+        } else {
+            "Obesity II"
+        }
+        return result
+    }

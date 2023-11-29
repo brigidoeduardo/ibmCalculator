@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
                 val height: Float = heightStr.toFloat()
                 val weight: Float = weightStr.toFloat()
 
-                val finalHeight: Float = height * height
-                val result: Float = weight / finalHeight
+                val result = IBMlogic(height, weight)
+
 
                 val intent = Intent(this, IbmResultActivity::class.java)
                     .apply {
@@ -40,3 +40,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+    fun IBMlogic (height : Float , weight : Float) : Float {
+        val finalHeight: Float = height * height
+        val result: Float = weight / finalHeight
+        return result
+
+    }
