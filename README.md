@@ -1,5 +1,5 @@
-# IBM Calculator
-IBM Calculator is an app I have developed as a first step in my Android development journey.
+# BMI Calculator
+BMI Calculator is an app I have developed as a first step in my Android development journey in order to improve UI editing skills.
 
 
 
