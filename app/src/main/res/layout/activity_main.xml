@@ -9,27 +9,38 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scale"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
         android:id="@+id/subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="start"
         android:padding="10dp"
-        android:text="Fill the fields to calculate your IBM"
+        android:text="Fill the fields to calculate your BMI"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnIbmCalc"
+        app:layout_constraintBottom_toTopOf="@+id/btnBmiCalc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <EditText
         android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Height in Meters"
+        android:textAlignment="center"
         android:inputType="numberDecimal"
         android:maxLength="5"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,18 +48,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
-
+        app:layout_constraintVertical_bias="0.509" />
 
     <EditText
         android:id="@+id/weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Weight in Kg"
+        android:textAlignment="center"
         android:inputType="numberDecimal"
         android:maxLength="5"
-
-        app:layout_constraintBottom_toTopOf="@+id/btnIbmCalc"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/height"
@@ -56,15 +66,16 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnIbmCalc"
+        android:id="@+id/btnBmiCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Calculate_IBM"
+        android:text="@string/Calculate_Bmi"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
+        app:layout_constraintVertical_bias="0.807"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

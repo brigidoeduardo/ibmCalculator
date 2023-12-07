@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 class IbmResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ibm_result)
+        setContentView(R.layout.activity_bmi_result)
 
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val tvIbmResult = findViewById<TextView>(R.id.tvIbmResult)
-        val tvIbmNumber = findViewById<TextView>(R.id.tvIbmNumber)
+        val tvIbmResult = findViewById<TextView>(R.id.tvBmiResult)
+        val tvIbmNumber = findViewById<TextView>(R.id.tvBmiNumber)
 
         val result = intent.getFloatExtra("EXTRA_RESULT",0.0f)
 
