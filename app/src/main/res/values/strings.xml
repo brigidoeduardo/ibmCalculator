@@ -2,5 +2,7 @@
     <string name="app_name">BMI Calculator</string>
     <string name="Calculate_Bmi">Calculate BMI</string>
     <string name="message_classification">Classification:\n %1$s</string>
+    <string name="selected_weight">Selected Weight: %1$d Kg</string>
+    <string name="selected_height">Selected Height: %1$d m</string>
 
 </resources>
