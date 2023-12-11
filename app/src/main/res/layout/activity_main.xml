@@ -11,7 +11,7 @@
         android:padding="10dp"
         android:text="Fill the fields to calculate your BMI"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="80dp"
         android:layout_marginTop="40dp"/>
@@ -25,7 +25,8 @@
         android:layout_gravity="center"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"/>
     <SeekBar
         android:id="@+id/seekBarWeight"
         android:layout_width="match_parent"
@@ -55,6 +56,7 @@
         android:layout_gravity="center"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:textSize="18sp"
         android:layout_marginBottom="20dp"/>
 
     <LinearLayout
@@ -75,7 +77,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="m"/>
+            android:text="m"
+            android:layout_margin="10dp"/>
 
         <NumberPicker
             android:id="@+id/numberPickerCentimeters"
